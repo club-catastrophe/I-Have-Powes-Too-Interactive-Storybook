@@ -1,0 +1,87 @@
+{
+  "tagalog": {
+    "definition": "filipino glossary test",
+    "type": "concept"
+  },
+  "Lukas": {
+    "definition": "Isang siyam na taong gulang na batang lalaki, na mahilig sa matematika",
+    "type": "character"
+  },
+  "math": {
+    "definition": "Tinatawag din itong Matematika sa Tagalog. Ito ay isang uri ng Agham (Science) ng mga numero, hugis, at mga pattern",
+    "type": "concept"
+  },
+  "matematika": {
+    "definition": "Ito ay isang uri ng Agham ng mga numero, hugis, at mga pattern",
+    "type": "concept"
+  },
+  "mahiyain": {
+    "definition": "Taong nahihirapang makipag-usap o makipagkaibigan sa iba",
+    "type": "concept"
+  },
+  "kaklase": {
+    "definition": "Mga estudyanteng nasa parehong klase",
+    "type": "character"
+  },
+  "Emma": {
+    "definition": "Kaklase ni Lukas na nangangailangan ng tulong sa matematika",
+    "type": "character"
+  },
+  "fractions": {
+    "definition": "Mga bahagi ng kabuuan, tulad ng 1/2 o 3/4",
+    "type": "concept"
+  },
+  "banayad": {
+    "definition": "Tumutukoy sa isang bagay o kilos na mahinahon, marahan, o dahan-dahan",
+    "type": "concept"
+  },
+   "nag-ngangal": {
+    "definition": "Isang malakas na pag-ungal na karaniwang ginagawa ng mga hayop kapag sila ay galit, gutom, o nai-irita",
+    "type": "concept"
+  },
+  "grooming": {
+    "definition":"Ay ang gawain ng isang matanda o tao na nag-aalok sa iyo ng laruan, pagkain, o regalo pero ang kapalit ay gagawa kayo ng masama o isang bagay na ayaw mong gawin.",
+    "type":"concept"
+  },
+  "Gino": {
+    "definition": "Guro ni Lukas sa matematika na may itinatagong motibo",
+    "type": "character"
+  },
+   "division": {
+    "definition": "Isang operasyon sa matematika na naghahati ng isang numero sa pantay-pantay na bahagi",
+    "type": "concept"
+  },
+   "recess": {
+    "definition": "Isang oras sa paaralan kung saan ang mga estudyante ay nagpapahinga at naglalaro",
+    "type": "concept"
+  },
+  "advanced": {
+    "definition": "Mas mataas na antas ng pag-aaral o kasanayan sa isang partikular na paksa",
+    "type": "concept"
+  },
+  "badge": {
+    "definition": "Isang maliit na piraso ng metal, tela, o plastik na may simbolo o disenyo na nagsisilbing pagkakakilanlan o parangal",
+    "type": "concept"
+  },
+  "pasilyo": {
+    "definition": "Isang mahabang daanan sa loob ng isang gusali na nag-uugnay sa iba't ibang mga silid o lugar",
+    "type": "concept"
+  },
+  "suspension": {
+    "definition": "Pansamantalang pagtigil sa pagpasok sa paaralan o trabaho bilang parusa sa isang mag-aaral o guro dahil sa paglabag sa mga patakaran ng paaralan",
+    "type": "concept"
+  },
+  "personal na espasyo": {
+    "definition": "Ang personal na espasyo ay ang lugar sa paligid ng isang tao na itinuturing niyang pribado at hindi dapat nilalabag ng iba nang walang pahintulot.",
+    "type": "concept"
+  },
+  "sofa": {
+    "definition": "Isang uri ng upuan na may malambot na unan at karaniwang ginagamit sa sala para sa pag-upo ng maraming tao",
+    "type": "concept"
+  },
+  "guidance counselor": {
+    "definition": "Isang propesyonal sa paaralan na nagbibigay ng suporta at payo sa mga estudyante tungkol sa kanilang akademiko, emosyonal, at sosyal na mga pangangailangan.",
+    "type": "concept"
+  }
+
+}
