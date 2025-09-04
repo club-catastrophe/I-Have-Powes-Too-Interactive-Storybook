@@ -17,6 +17,8 @@ let isHomescreenMusicPlaying = false;
 let homescreenInteractionListeners = [];
 let chapterSelectMusic = null;
 let isChapterSelectMusicPlaying = false;
+let pageViewCount = 0;
+let volumeDebugLog = [];
 
 const bgMusic = new Audio("MUSIC/NEUTRAL/storytelling.mp3");
 bgMusic.loop = true;
@@ -86,6 +88,8 @@ const translations = {
     narrationSpeedLabel: "Narration Speed",
     languageLabel: "Language",
     clearBookmarksBtn: "Clear All Bookmarks",
+    creditsBtn: "Show Credits",
+
     goToBookmarkBtn: "Go to Bookmark",
     bookmarksTitle: "My Bookmarks",
     addBookmarkBtn: "Add Current Page"
@@ -97,12 +101,12 @@ const translations = {
     startNow: "Simulan Ngayon",
     chapterSelect: "Pumili ng Kabanata",
 
-    introTitle: "Para sa ating munting kabataan",
-    introSubtitle: "Tuklasin ang inyong kapangyarihan at iyong ipamalas!,",
+    introTitle: "Para sa mumunting mga bata",
+    introSubtitle: "Hanapin niyo ang inyong lakas ng loob, tuklasin niyo ang inyong kapangyarihan,  at gamitin niyo ito para sa kabutihan.",
     beginStory: "Simulan ang Kuwento",
 
     dedTitle: "Kumusta, mahal naming mambabasa!",
-    dedSubtitle: "Inaanyayahan ka naming maglakad kasama namin sa mga liku-likong kalsada ng baranggay, kung saan may tatlong batang may natatagong kapangyarihan ang naninirahan. Lingid sa kanilang kaalaman, ang kanilang lakas ay lihim na itinatago maging sa kanilang sarili. Basahin at pumili kung paano nila tatahakin ang kanilang mga paglalakbay, tuklasin ang kanilang kahanga-hangang kakayahan, at saksihan kung paano nag-uugnay ang kanilang mga kuwento. Sino ang nakakaalam? Baka sa huli… Matuklasan mo rin ang iyong kapangyarihan.",
+    dedSubtitle: "Inaanyayahan ka naming maglakbay sa mga liku-likong kalsada ng barangay, kung saan may tatlong batang may natatagong kapangyarihan ang naninirahan. Lingid sa kanilang kaalaman, ang kanilang lakas ay lihim na itinatago maging sa kanilang sarili. Basahin at pumili kung paano nila tatahakin ang kanilang mga paglalakbay, tuklasin ang kanilang kahanga-hangang tapang, at saksihan kung paano nag-uugnay ang kanilang mga kuwento. Malay natin, baka sa huli, matuklasan mo rin ang iyong kapangyarihan!",
     dedButton: "Tumuloy",
 
     chapterSelectTitle: "Pumili ng Kabanata",
@@ -117,20 +121,20 @@ const translations = {
 
     tutorialTitle: "Matutong Gamitin ang Kuwento",
     tutorialInstruction: "I-hover ang mga naka-highlight na salita para malaman ang kahulugan!",
-    tutorialSampleText: "Isang maligayang pagbasa sa inyong lahat para sa bagong interaktibong aklat,'May Kapangyarihan din Ako!'. Dito makikilala natin ang mga kahanga-hangang mga batang tauhan at tutuklasin ang kanilang napaka-yaman na mga kuwento.<br></br>Upang gabayan kayo sa inyong pagbabasa, maaari ninyong i-hover ang mga naka-highlight na salita upang matuto at maintindihan ang mga <span class='glossary-word-highlight type-character' data-word='mga karakter' data-definition='Ang mga taong makikilala ninyo sa buong paglalakbay, bawat isa ay may kani-kaniyang natatanging personalidad.'>mga karakter</span>, <span class='glossary-word-highlight type-location' data-word='mga lugar' data-definition='Ang mga setting at lugar na makikita at pupuntahan ng inyong mga karakter.'>mga lugar</span>, at <span class='glossary-word-highlight type-concept' data-word='mga konsepto' data-definition='Mga mahihirap na salita na maaaring kailangang tulong ng mga batang mambabasa para maintindihan.'>mga konsepto</span>! Hayaang gabayan kayo ng mga markang ito sa inyong paglalakbay!",
-    tutorialHint: "✨ Subukan i-hover ang mga may kulay na salita sa itaas! ✨",
-    navigationTitle: "Nabigasyon ng Kuwento",
-    navigationInstruction: "I-hover ang mga icon para malaman kung ano ang ginagawa nila!",
-    tutorialIconsHint: "✨ Subukan i-hover ang mga icon sa itaas! ✨",
+    tutorialSampleText: "Maligayang pagdating sa interaktibong aklat na nagngangalang 'May Kapangyarihan din Ako!'. Dito makakakilala tayo ng mga kahanga-hangang mga tauhan at matutuklasan natin ang kanilang napakagandang mga kuwento.<br></br>Upang gabayan kayo sa inyong pagbabasa, maaari ninyong i-hover ang mga may kulay na salita upang matuto at maintindihan ang<span class='glossary-word-highlight type-character' data-word='mga karakter' data-definition='Ang mga taong makikilala niyo sa mga storya ay may kaniya-kaniyang ugali. Dito mo malalaman ang kanilang personalidad'>mga karakter</span>, <span class='glossary-word-highlight type-location' data-word='mga lugar' data-definition='Ang mga lugar na makikita niyo sa mga storya ay may iba’t ibang itsura. Dito mo malalaman ang mga ito.'>mga lugar</span>, at <span class='glossary-word-highlight type-concept' data-word='mga konsepto' data-definition='May mga konsepto o salita kayong makikita sa mga storya ay may iba’t ibang kahulugan na maaaring mahirap intindihin. Dito mo malalaman kung ano ang kahulugan ng mga ito.'>mga konsepto</span>! Hayaan ang mga markang ito na gabayan kayo sa inyong pagbabasa!",
+    tutorialHint: "✨ Subukang Itapat ang mouse sa mga salitang may kulay sa itaas!✨",
+    navigationTitle: "Pag gamit ng Aklat",
+    navigationInstruction: "Itapat ang mouse sa mga maliliit na button para malaman kung ano ginagawa nila!",
+    tutorialIconsHint: "✨ Subukang itapat ang mouse sa mga button sa itaas! ✨",
     tutorialContinue: "Tara Na!",
 
-    tooltipChapter: "Pumili ng Kabanata - Pumili ng ibang kabanata",
-    tooltipHome: "Menu - Bumalik sa pangunahing menu",
+    tooltipChapter: "Kabanata - Piliin ang kabanata",
+    tooltipHome: "Main Menu - Bumalik sa pangunahing menu",
     tooltipReplay: "Ulitin - Ulitin ang Pagbigkas ng Pahina",
     tooltipBookmark: "Bookmark - I-save ang kasalukuyang pahina",
-    tooltipInfo: "Impormasyon - Detalye ng tutorial at tulong",
-    tooltipSettings: "Settings - Ayusin ang volume, laki ng font, at iba pa",
-    tooltipAudio: "Pag-toggle ng Audio - Buksan/sarahin ang tunog",
+    tooltipInfo: "Impormasyon - Paano gamitin ang aklat",
+    tooltipSettings: "Settings - Lakas ng tunog, laki ng letra, at iba pa.",
+    tooltipAudio: "Tunog - Buksan at isara ng tunog",
 
     settingsTitle: "Mga Settings",
     informationTitle: "Impormasyon",
@@ -142,6 +146,7 @@ const translations = {
     narrationSpeedLabel: "Bilis ng Narration",
     languageLabel: "Wika",
     clearBookmarksBtn: "Burahin Lahat ng mga Bookmark",
+    creditsBtn: "Ipakita ang credits",
     goToBookmarkBtn: "Pumunta sa Bookmark",
     bookmarksTitle: "Aking mga Bookmark",
     addBookmarkBtn: "Idagdag ang Kasalukuyang Pahina"
@@ -150,7 +155,6 @@ const translations = {
 };
 
 let tutorialContext = null;
-//for language pref setting
 
 function saveLanguagePreference(language) {
   localStorage.setItem('preferredLanguage', language);
@@ -220,6 +224,7 @@ function updateLanguageText(language) {
     'narration-speed-label': t.narrationSpeedLabel,
     'language-label': t.languageLabel,
     'clear-bookmarks-btn': t.clearBookmarksBtn,
+    'credits-btn': t.creditsBtn,
     'bookmarks-title': t.bookmarksTitle,
     'add-bookmark-btn': t.addBookmarkBtn
   };
@@ -270,44 +275,6 @@ function updateLanguageText(language) {
   });
 
   console.log('UI text updated to language:', language);
-}
-
-function handleLanguageChange(newLanguage, fromSelector = null) {
-  const oldLanguage = currentLanguage;
-  currentLanguage = newLanguage;
-
-  saveLanguagePreference(newLanguage);
-  syncLanguageSelectors(newLanguage);
-  updateLanguageText(newLanguage);
-
-  const currentScreen = getCurrentActiveScreen();
-
-  if (currentScreen === 'opening-screen') {
-
-    stopHomescreenMusic();
-
-    updateOpeningScreenContent(newLanguage);
-
-    setTimeout(() => {
-      startHomescreenMusic();
-    }, 100);
-  } else {
-
-    updateOpeningScreenContent(newLanguage);
-  }
-
-  console.log(`Language changed from ${oldLanguage} to ${newLanguage} (from ${fromSelector})`);
-
-  const storyPage = document.getElementById('story-page');
-  if (storyPage && storyPage.style.display === 'block' && oldLanguage !== newLanguage) {
-    const confirmMessage = newLanguage === 'tl' ? 
-      'Nabago ang wika! Gusto mo bang i-reload ang kasalukuyang kabanata sa bagong wika?' :
-      'Language changed! Would you like to reload the current chapter in the new language?';
-
-    if (confirm(confirmMessage)) {
-      loadChapterWithPagePreservation(currentChapter);
-    }
-  }
 }
 
 function getCurrentLanguage() {
@@ -388,8 +355,119 @@ function initializeLanguageSystem() {
   window.originalLoadChapter = originalLoadChapter;
 })();
 
+function logVolumeState(context) {
+  const state = {
+    pageViewCount: pageViewCount,
+    context: context,
+    isAudioMuted: isAudioMuted,
+    originalNarrationVolume: originalNarrationVolume,
+    pageAudioVolume: pageAudio.volume,
+    sliderValue: document.getElementById('narrationSlider')?.value,
+    currentPage: currentPage,
+    timestamp: Date.now()
+  };
 
-//alot of these middle functions are for fixing problems caused by the homescreen music
+  volumeDebugLog.push(state);
+  console.log(`🔊 [${context}] Page ${pageViewCount}:`, state);
+
+  if (volumeDebugLog.length > 20) {
+    volumeDebugLog.shift();
+  }
+
+  return state;
+}
+
+function initializeSliderListeners() {
+  const bgMusicSlider = document.getElementById('bgMusicSlider');
+  const narrationSlider = document.getElementById('narrationSlider');
+  const sfxSlider = document.getElementById('sfxSlider');
+  const fontSizeSlider = document.getElementById('fontSizeSlider');
+  const narrationSpeedSelect = document.getElementById('narrationSpeedSelect');
+
+  const bgMusicDisplay = document.getElementById('bg-music-display');
+  const narrationDisplay = document.getElementById('narration-display');
+  const sfxDisplay = document.getElementById('sfx-display');
+  const fontSizeDisplay = document.getElementById('font-size-display');
+
+  if (narrationSlider && narrationDisplay) {
+  narrationSlider.addEventListener('input', (e) => {
+    const rawValue = parseFloat(e.target.value);
+    const clampedValue = Math.min(Math.max(rawValue, 0), 1); 
+
+    if (rawValue !== clampedValue) {
+      e.target.value = clampedValue;
+      console.warn(`⚠️ Slider value was ${rawValue}, clamped to ${clampedValue}`);
+    }
+
+    const displayValue = Math.round(clampedValue * 100);
+    narrationDisplay.textContent = `(${displayValue}%)`;
+
+    originalNarrationVolume = clampedValue;
+
+    const actualVolume = isAudioMuted ? 0 : clampedValue;
+
+    try {
+      pageAudio.volume = actualVolume;
+    } catch (error) {
+      console.error(`❌ Error setting pageAudio volume to ${actualVolume}:`, error);
+
+      pageAudio.volume = isAudioMuted ? 0 : 0.9;
+      originalNarrationVolume = 0.9;
+    }
+
+    console.log(`🎚️ Narration slider changed: originalNarrationVolume=${originalNarrationVolume}, actual volume=${pageAudio.volume}, muted=${isAudioMuted}`);
+    logVolumeState('slider-change');
+  });
+}
+
+  if (bgMusicSlider && bgMusicDisplay) {
+    bgMusicSlider.addEventListener('input', (e) => {
+      const value = Math.round(e.target.value * 100);
+      bgMusicDisplay.textContent = `(${value}%)`;
+      originalBgVolume = parseFloat(e.target.value);
+      bgMusic.volume = isAudioMuted ? 0 : originalBgVolume;
+
+      if (homescreenMusic && isHomescreenMusicPlaying) {
+        homescreenMusic.volume = isAudioMuted ? 0 : (originalBgVolume * 0.75);
+      }
+      if (chapterSelectMusic && isChapterSelectMusicPlaying) {
+        chapterSelectMusic.volume = isAudioMuted ? 0 : (originalBgVolume * 0.75);
+      }
+      if (creditsMusic && !creditsMusic.paused) {
+        creditsMusic.volume = isAudioMuted ? 0 : originalBgVolume;
+      }
+    });
+  }
+
+  if (sfxSlider && sfxDisplay) {
+    sfxSlider.addEventListener('input', (e) => {
+      const value = Math.round(e.target.value * 100);
+      sfxDisplay.textContent = `(${value}%)`;
+      originalSfxVolume = parseFloat(e.target.value);
+    });
+  }
+
+  if (narrationSpeedSelect) {
+    narrationSpeedSelect.addEventListener('change', (e) => {
+      const speed = parseFloat(e.target.value);
+      saveNarrationSpeedPreference(speed);
+      if (pageAudio.src && !pageAudio.paused) {
+        applyNarrationSpeed();
+      }
+    });
+  }
+
+  if (fontSizeSlider && fontSizeDisplay) {
+    fontSizeSlider.addEventListener('input', (e) => {
+      const value = Math.round(e.target.value * 100);
+      fontSizeDisplay.textContent = `(${value}%)`;
+      const dialogueBoxes = document.querySelectorAll('.dialogue-box');
+      dialogueBoxes.forEach(box => {
+        box.style.fontSize = `${e.target.value}rem`;
+      });
+    });
+  }
+}
 
 function initializeHomescreenMusic() {
   if (!homescreenMusic) {
@@ -560,8 +638,6 @@ function stopHomescreenMusic() {
   }
 }
 
-//this is for bug fixing
-
 function removeHomescreenInteractionListeners() {
 
   console.log("removeHomescreenInteractionListeners called");
@@ -585,46 +661,6 @@ function resetHomescreenMusicState() {
   console.log("✅ Homescreen music state reset complete");
 }
 
-function handleLanguageChange(newLanguage, fromSelector = null) {
-  const oldLanguage = currentLanguage;
-  currentLanguage = newLanguage;
-
-  console.log(`🔄 Language change: ${oldLanguage} -> ${newLanguage} (from: ${fromSelector})`);
-
-  saveLanguagePreference(newLanguage);
-  syncLanguageSelectors(newLanguage);
-  updateLanguageText(newLanguage);
-
-  const currentScreen = getCurrentActiveScreen();
-  console.log(`Current screen: ${currentScreen}`);
-
-  if (currentScreen === 'opening-screen') {
-    updateOpeningScreenContent(newLanguage);
-
-    console.log("🎵 Resetting homescreen music due to language change");
-    resetHomescreenMusicState();
-
-    setTimeout(() => {
-      startHomescreenMusic();
-    }, 200);
-  } else {
-    updateOpeningScreenContent(newLanguage);
-  }
-
-  console.log(`Language changed from ${oldLanguage} to ${newLanguage} (from ${fromSelector})`);
-
-  const storyPage = document.getElementById('story-page');
-  if (storyPage && storyPage.style.display === 'block' && oldLanguage !== newLanguage) {
-    const confirmMessage = newLanguage === 'tl' ? 
-      'Nabago ang wika! Gusto mo bang i-reload ang kasalukuyang kabanata sa bagong wika?' :
-      'Language changed! Would you like to reload the current chapter in the new language?';
-
-    if (confirm(confirmMessage)) {
-      loadChapterWithPagePreservation(currentChapter);
-    }
-  }
-}
-
 function updateOpeningScreenContent(language) {
   const config = translations[language]; 
   if (!config) return;
@@ -645,7 +681,7 @@ function handleLanguageChange(newLanguage, fromSelector = null) {
   const oldLanguage = currentLanguage;
   currentLanguage = newLanguage;
 
-  console.log(`🔄 Language change: ${oldLanguage} -> ${newLanguage} (from: ${fromSelector})`);
+  console.log(`Language change: ${oldLanguage} -> ${newLanguage} (from: ${fromSelector})`);
 
   saveLanguagePreference(newLanguage);
   syncLanguageSelectors(newLanguage);
@@ -657,7 +693,7 @@ function handleLanguageChange(newLanguage, fromSelector = null) {
   updateOpeningScreenContent(newLanguage);
 
   if (currentScreen === 'opening-screen') {
-    console.log("🎵 On opening screen - managing homescreen music for language change");
+    console.log("On opening screen - managing homescreen music for language change");
 
     resetHomescreenMusicState();
 
@@ -665,20 +701,16 @@ function handleLanguageChange(newLanguage, fromSelector = null) {
       startHomescreenMusic();
     }, 200);
   } else {
-    console.log("🎵 Not on opening screen - skipping homescreen music management");
+    console.log("Not on opening screen - skipping homescreen music management");
   }
 
   const storyPage = document.getElementById('story-page');
   if (storyPage && storyPage.style.display === 'block' && oldLanguage !== newLanguage) {
-    const confirmMessage = newLanguage === 'tl' ? 
-      'Nabago ang wika! Gusto mo bang i-reload ang kasalukuyang kabanata sa bagong wika?' :
-      'Language changed! Would you like to reload the current chapter in the new language?';
 
-    if (confirm(confirmMessage)) {
-      loadChapterWithPagePreservation(currentChapter);
-    }
+    loadChapterWithPagePreservation(currentChapter);
   }
 }
+
 function initializeLanguageSystem() {
 
   loadLanguagePreference();
@@ -746,8 +778,6 @@ function showChapterTitlePage() {
     'Begin Your Journey';
 }
 
-//to show chater title screen
-
 function beginChapterStory() {
   stopChapterSelectMusic();
   document.getElementById("chapter-title-screen").style.display = "none";
@@ -758,8 +788,6 @@ function beginChapterStory() {
   startBackgroundMusic();
   showPage(currentPage);
 }
-
-//for specifically the opening tutorial
 
 function showTutorial() {
 
@@ -796,8 +824,6 @@ function proceedToStory() {
     originalStartStory.call(window);
   }
 }
-
-//init glossary json
 
 function initializeTutorialGlossary() {
   console.log('Initializing tutorial glossary...');
@@ -876,8 +902,6 @@ function hideTutorialGlossaryPopup() {
     }, 200);
   }
 }
-
-//for language switching
 
 function getChapterFileName(chapterNum) {
   console.log(`Getting chapter file for language: ${currentLanguage}`);
@@ -1106,14 +1130,20 @@ function initializeSliderListeners() {
       const value = Math.round(e.target.value * 100);
       bgMusicDisplay.textContent = `(${value}%)`;
 
-      bgMusic.volume = e.target.value;
+      originalBgVolume = parseFloat(e.target.value);
+
+      bgMusic.volume = isAudioMuted ? 0 : originalBgVolume;
 
       if (homescreenMusic && isHomescreenMusicPlaying) {
-        homescreenMusic.volume = isAudioMuted ? 0 : (e.target.value * 0.75);
+        homescreenMusic.volume = isAudioMuted ? 0 : (originalBgVolume * 0.75);
       }
 
-      if (!isAudioMuted) {
-        originalBgVolume = e.target.value;
+      if (chapterSelectMusic && isChapterSelectMusicPlaying) {
+        chapterSelectMusic.volume = isAudioMuted ? 0 : (originalBgVolume * 0.75);
+      }
+
+      if (creditsMusic && !creditsMusic.paused) {
+        creditsMusic.volume = isAudioMuted ? 0 : originalBgVolume;
       }
     });
   }
@@ -1122,11 +1152,12 @@ function initializeSliderListeners() {
     narrationSlider.addEventListener('input', (e) => {
       const value = Math.round(e.target.value * 100);
       narrationDisplay.textContent = `(${value}%)`;
-      pageAudio.volume = e.target.value;
 
-      if (!isAudioMuted) {
-        originalNarrationVolume = e.target.value;
-      }
+      originalNarrationVolume = parseFloat(e.target.value);
+
+      pageAudio.volume = isAudioMuted ? 0 : originalNarrationVolume;
+
+      console.log(`Narration slider changed: originalNarrationVolume=${originalNarrationVolume}, actual volume=${pageAudio.volume}, muted=${isAudioMuted}`);
     });
   }
 
@@ -1135,9 +1166,7 @@ function initializeSliderListeners() {
       const value = Math.round(e.target.value * 100);
       sfxDisplay.textContent = `(${value}%)`;
 
-      if (!isAudioMuted) {
-        originalSfxVolume = e.target.value;
-      }
+      originalSfxVolume = parseFloat(e.target.value);
     });
   }
 
@@ -1504,15 +1533,10 @@ function goToBookmark(index) {
 }
 
 function deleteBookmark(index) {
-  const confirmMessage = currentLanguage === 'tl' ? 
-    'Sigurado ka bang gusto mong tanggalin ang bookmark na ito?' :
-    'Are you sure you want to delete this bookmark?';
 
-  if (confirm(confirmMessage)) {
-    bookmarks.splice(index, 1);
-    saveBookmarks();
-    renderBookmarksList();
-  }
+  bookmarks.splice(index, 1);
+  saveBookmarks();
+  renderBookmarksList();
 }
 
 function handleHomepageBookmarkAttempt() {
@@ -1695,32 +1719,27 @@ function initializeAudioSystem() {
 }
 
 function clearAllBookmarks() {
-  const confirmMessage = currentLanguage === 'tl' ? 
-    'Sigurado ka bang gusto mong tanggalin ang lahat ng bookmark?' :
-    'Are you sure you want to clear all bookmarks?';
 
-  if (confirm(confirmMessage)) {
-    bookmarks = [];
-    localStorage.removeItem('storyBookmarks');
-    localStorage.removeItem('storyBookmark'); 
-    localStorage.removeItem('storyProgress');
-    console.log('All bookmarks and progress cleared');
+  bookmarks = [];
+  localStorage.removeItem('storyBookmarks');
+  localStorage.removeItem('storyBookmark'); 
+  localStorage.removeItem('storyProgress');
+  console.log('All bookmarks and progress cleared');
 
-    const container = document.getElementById('bookmarks-list');
-    if (container) {
-      renderBookmarksList();
-    }
+  const container = document.getElementById('bookmarks-list');
+  if (container) {
+    renderBookmarksList();
+  }
 
-    if (event && event.target) {
-      const clearBtn = event.target;
-      const originalText = clearBtn.textContent;
-      const clearedText = currentLanguage === 'tl' ? 'Na-clear na!' : 'Cleared!';
-      clearBtn.textContent = clearedText;
+  if (event && event.target) {
+    const clearBtn = event.target;
+    const originalText = clearBtn.textContent;
+    const clearedText = currentLanguage === 'tl' ? 'Na-clear na!' : 'Cleared!';
+    clearBtn.textContent = clearedText;
 
-      setTimeout(() => {
-        clearBtn.textContent = originalText;
-      }, 1000);
-    }
+    setTimeout(() => {
+      clearBtn.textContent = originalText;
+    }, 1000);
   }
 }
 
@@ -2136,16 +2155,19 @@ function handleSpecialPageNavigation(specialPage, specialData = {}) {
 }
 
 function showPage(index) {
+  pageViewCount++;
+  console.log(`📄 === SHOWING PAGE ${pageViewCount} (index: ${index}) ===`);
+
+  logVolumeState('page-start');
+
   const bg = document.getElementById("background");
   const container = document.getElementById("story-container");
   const prevBtn = document.getElementById("prev");
   const nextBtn = document.getElementById("next");
 
   container.innerHTML = "";
-
   const oldVideos = bg.querySelectorAll("video.story-video");
   oldVideos.forEach(v => v.remove());
-
   bg.style.backgroundImage = "";
 
   const page = storyData[index];
@@ -2165,7 +2187,6 @@ function showPage(index) {
     video.setAttribute("autoplay", "");
     video.setAttribute("loop", "");
     video.setAttribute("preload", "auto");
-
     bg.appendChild(video);
     imageEl.style.display = "none";
     imageEl.src = "";
@@ -2184,33 +2205,26 @@ function showPage(index) {
     page.dialogueBoxes.forEach(dialogueData => {
       const dialogueBox = document.createElement("div");
       dialogueBox.className = `dialogue-box ${dialogueData.styleClass || ""}`;
-
       const fontSizeSlider = document.getElementById('fontSizeSlider');
       const fontSizeValue = fontSizeSlider ? fontSizeSlider.value : 1.2;
       dialogueBox.style.fontSize = `${fontSizeValue}rem`;
-
       const p = document.createElement("p");
       p.innerHTML = processTextWithGlossary(dialogueData.text);
       dialogueBox.appendChild(p);
-
       container.appendChild(dialogueBox);
     });
   }
-
   else if (page.dialogue && page.dialogue.length > 0) {
     const dialogueBox = document.createElement("div");
     dialogueBox.className = `dialogue-box ${page.styleClass || ""}`;
-
     const fontSizeSlider = document.getElementById('fontSizeSlider');
     const fontSizeValue = fontSizeSlider ? fontSizeSlider.value : 1.2;
     dialogueBox.style.fontSize = `${fontSizeValue}rem`;
-
     page.dialogue.forEach(line => {
       const p = document.createElement("p");
       p.innerHTML = processTextWithGlossary(line);
       dialogueBox.appendChild(p);
     });
-
     container.appendChild(dialogueBox);
   }
 
@@ -2225,7 +2239,6 @@ function showPage(index) {
 
     const choiceDescription = document.createElement("div");
     choiceDescription.className = "choice-description";
-
     const defaultQuestion = currentLanguage === 'tl' ? "Ano ang dapat gawin?" : "What should you do?";
     choiceDescription.innerHTML = page.choiceQuestion || defaultQuestion;
     choiceContainer.appendChild(choiceDescription);
@@ -2238,11 +2251,9 @@ function showPage(index) {
       button.className = "choice-btn";
       button.textContent = choice.text;
       button.onclick = () => handleChoice(index, button);
-
       if (choice.isTranslucent) {
         button.classList.add('translucent');
       }
-
       buttonsWrapper.appendChild(button);
     });
 
@@ -2261,37 +2272,95 @@ function showPage(index) {
     } else {
       prevBtn.style.display = currentPage > 0 ? "flex" : "none";
     }
-
     nextBtn.style.display = currentPage < storyData.length - 1 ? "flex" : "none";
   }
 
   updateBackgroundMusic(index);
 
+  console.log(`🎵 Processing audio for page ${pageViewCount}...`);
+
   if (page.bgAudio) {
-    pageAudio.pause();
-    pageAudio.src = page.bgAudio;
+  console.log(`🎵 Page has bgAudio: ${page.bgAudio}`);
 
-    pageAudio.volume = isAudioMuted ? 0 : (document.getElementById('narrationSlider')?.value || originalNarrationVolume);
+  logVolumeState('before-audio-setup');
 
-    applyNarrationSpeed();
+  pageAudio.pause();
+  pageAudio.src = page.bgAudio;
 
-    const autoplayCheckbox = document.getElementById('autoplayCheckbox');
-    const autoplayEnabled = autoplayCheckbox ? autoplayCheckbox.checked : true;
+  const sliderValue = document.getElementById('narrationSlider')?.value || originalNarrationVolume;
+  const clampedOriginalVolume = Math.min(Math.max(parseFloat(sliderValue), 0), 1);
+  const calculatedVolume = isAudioMuted ? 0 : clampedOriginalVolume;
 
-    if (autoplayEnabled && !isAudioMuted) {
-      const audioPlayPromise = pageAudio.play();
-      if (audioPlayPromise !== undefined) {
-        audioPlayPromise.then(() => {
-          console.log(`Page audio started at ${getCurrentNarrationSpeed()}x speed, volume: ${pageAudio.volume}`);
-        }).catch(err => {
-          console.warn("Page audio autoplay blocked:", err);
-        });
-      }
+  originalNarrationVolume = clampedOriginalVolume;
+
+  console.log(`🎵 Volume calculation for page ${pageViewCount}:`);
+  console.log(`  isAudioMuted: ${isAudioMuted}`);
+  console.log(`  sliderValue: ${sliderValue}`);
+  console.log(`  clampedOriginalVolume: ${clampedOriginalVolume}`);
+  console.log(`  calculatedVolume: ${calculatedVolume}`);
+
+  try {
+    pageAudio.volume = calculatedVolume;
+    console.log(`🎵 Set pageAudio.volume to: ${pageAudio.volume}`);
+  } catch (error) {
+    console.error(`❌ Volume setting error: ${error.message}`);
+    console.error(`  Attempted volume: ${calculatedVolume}`);
+
+    pageAudio.volume = isAudioMuted ? 0 : 0.9;
+    originalNarrationVolume = 0.9;
+    console.log(`🎵 Fallback volume set to: ${pageAudio.volume}`);
+  }
+
+  logVolumeState('after-volume-set');
+
+  applyNarrationSpeed();
+
+  const autoplayCheckbox = document.getElementById('autoplayCheckbox');
+  const autoplayEnabled = autoplayCheckbox ? autoplayCheckbox.checked : true;
+
+  if (autoplayEnabled && !isAudioMuted && pageAudio.volume > 0) {
+    console.log(`🎵 Attempting to play audio (volume: ${pageAudio.volume})`);
+    const audioPlayPromise = pageAudio.play();
+    if (audioPlayPromise !== undefined) {
+      audioPlayPromise.then(() => {
+        console.log(`✅ Page audio started successfully on page ${pageViewCount}`);
+        logVolumeState('audio-playing');
+      }).catch(err => {
+        console.warn(`❌ Page audio failed on page ${pageViewCount}:`, err);
+        logVolumeState('audio-failed');
+      });
     }
   } else {
-    pageAudio.pause();
-    pageAudio.src = "";
+    console.log(`🔇 Audio not played - autoplay:${autoplayEnabled}, muted:${isAudioMuted}, vol:${pageAudio.volume}`);
+    logVolumeState('audio-not-played');
   }
+} else {
+  console.log(`🔇 No bgAudio for page ${pageViewCount}`);
+  pageAudio.pause();
+  pageAudio.src = "";
+  logVolumeState('no-audio');
+}
+
+  console.log(`📄 === END PAGE ${pageViewCount} ===`);
+}
+
+function dumpVolumeDebugLog() {
+  console.log("=== COMPLETE VOLUME DEBUG LOG ===");
+  volumeDebugLog.forEach((entry, i) => {
+    console.log(`${i}: [${entry.context}] Page ${entry.pageViewCount}:`, entry);
+  });
+  console.log("=== END DEBUG LOG ===");
+
+  return volumeDebugLog;
+}
+
+function debugVolumeState() {
+  console.log('=== VOLUME DEBUG STATE ===');
+  console.log('isAudioMuted:', isAudioMuted);
+  console.log('originalNarrationVolume:', originalNarrationVolume);
+  console.log('pageAudio.volume:', pageAudio.volume);
+  console.log('narrationSlider.value:', document.getElementById('narrationSlider')?.value);
+  console.log('========================');
 }
 
 function nextPage() {

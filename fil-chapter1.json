@@ -182,7 +182,7 @@
       "dialogue": [
         "Dinala ni Sir Gino si Lukas sa isang tahimik na lugar sa paaralan. Nakakatakot ang mga madilim na pasilyo na walang katao-tao. “Bakit nandito kami sa parte ng school na ‘to? Parang kakaiba ‘to,” isip niya sa sarili. Nakakangambang maglakad nang mag-isa sa koridor kasama ang kanyang guro. Nagsisimula nang mag-alinlangan si Lukas na may masamang gagawin si Sir Gino."
       ],
-      "styleClass": "ADJ4NE",
+      "styleClass": "ADJEE",
       "bgAudio": "lukas_lightbulb/Audio/Tagalog/PAGE 12.wav",
       "comment": "12"
     },
@@ -309,7 +309,7 @@
     {
       "image": "lukas_lightbulb/Pages/CHAP 1_PAGE 21.png",
       "dialogue": [
-        "“Sinabihan niya akong sumama sa kanya para makakuha ako ng STAR, pero naging kakaiba at nakakatakot siya.”\n“Pero bakit niya gagawin ‘yan? Paborito ka niya.”\nNasaktan ng malubha si Lukas. Hindi niya gusto ang sinabi ng kanyang kaklase, ngunit hindi niya alam kung ano ang sasabihin. Sa halip, ibinaba niya ang kanyang ulo. Hindi nagtagal, umalis ang kanyang kaklase upang makipaglaro sa kanyang mga kaibigan—iniwan si Lukas mag-isa."
+        "“Sinabihan niya akong sumama sa kanya para makakuha ako ng STAR, pero naging kakaiba at nakakatakot siya. Tapos, sinubukan niya kong hawakan”\n“Pero bakit niya gagawin ‘yan? Paborito ka niya.”\nNasaktan ng malubha si Lukas. Hindi niya gusto ang sinabi ng kanyang kaklase, ngunit hindi niya alam kung ano ang sasabihin. Sa halip, ibinaba niya ang kanyang ulo. Hindi nagtagal, umalis ang kanyang kaklase upang makipaglaro sa kanyang mga kaibigan—iniwan si Lukas mag-isa."
       ],
       "styleClass": "ADJ2SW",
       "bgAudio": "lukas_lightbulb/Audio/Tagalog/PAGE 21.wav",
@@ -328,13 +328,13 @@
           "text": "Oo",
           "jumpTo": 23,
           "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
-          "isNeutral": true
+          "isWrong": false
         },
         {
           "text": "Hindi",
           "jumpTo": 34,
           "soundEffect": "MUSIC/SOUND EFFECTS/WRONG.mp3",
-          "isNeutral": true
+          "isWrong": true
         }
       ],
       "bgAudio": "lukas_lightbulb/Audio/Tagalog/PAGE 22.wav",
@@ -474,7 +474,7 @@
       "dialogue": [
         "Ngumiti nang banayad ang kanyang nanay. “Sinumbong ko siya sa paaralan kahapon. Binigyan nila ng suspension. Hindi na siya ang magiging guro mo sa matematika.” Lumuhod ang kanyang tatay sa kanyang antas at inilagay ang kamay sa kanyang balikat. “At tandaan mo, Lukas. Kung may susubok na gawin kang hindi ligtas ulit, puwede kang magsabi sa amin. Lagi ka naming protektahan, aking munti at matalinong anak.”"
       ],
-      "styleClass": "ADJ4SW",
+      "styleClass": "ADJ5SW",
       "bgAudio": "lukas_lightbulb/Audio/Tagalog/PAGE 32.wav",
       "comment": "32"
     },
@@ -493,14 +493,20 @@
       "text": "Tumungo sa Leksyong Pangproteksyon!",
       "jumpTo": 44, 
       "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
-      "isNeutral": true
+      "isTranslucent": true
         },
         {
         "text": "Tumungo sa Mga Katanungan!",
         "jumpTo": 43,
         "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
         "isTranslucent": true
-      }
+        },
+        {
+        "text": "Bumalik at subukan ang ibang pinagpipilian",
+        "jumpTo": 0,
+        "soundEffect": "MUSIC/SOUND EFFECTS/NEUTRAL.mp3",
+        "isTranslucent": true
+        }
     ]
 
     },
@@ -510,7 +516,7 @@
       "dialogue": [
         "Hindi sumagot si Lukas. Tumakbo siya papunta sa sala at yumuko sa sofa. Nababagabag pa rin siya sa nangyari kanina. “May nangyari ba, Lukas?” tanong ng kanyang tatay na may pag-aalala. Umiling lang si Lukas at sumimangot sa sopa."
       ],
-      "styleClass": "SW",
+      "styleClass": "ADJSW",
       "bgAudio": "lukas_lightbulb/Audio/Tagalog/PAGE 34.wav",
       "comment": "34"
     },
@@ -519,7 +525,7 @@
       "dialogue": [
         "Mula sa araw na iyon, naging mas tahimik at mas malayo si Lukas kaysa dati. Tumigil siya sa pagtaas ng kanyang kamay sa math class at hindi na pumunta sa canteen para kumain ng tanghalian. Nag-iisa siyang sumasama sa bahay at tumanggi na sabihin sa kanyang mga magulang tuwing tinatanong siya."
       ],
-      "styleClass": "ADJSW",
+      "styleClass": "ADJ5SW",
       "bgAudio": "lukas_lightbulb/Audio/Tagalog/PAGE 35.wav",
       "comment": "35"
     },
@@ -528,7 +534,7 @@
       "dialogue": [
         "Lumapit ang school guidance counselor sa kanya isang araw, habang siya ay nag-iisa. “Hello, Lukas.” mahinahong bati niya. “Hiniling ng iyong mga magulang na kausapin kita.” Tiningnan siya ni Lukas na may mahiyain na ekspresyon. “Ano po ang ginawa ko?” tanong niya. “Wala kang ginawang masama. Gusto ko lang kitang kamustahin. Puwede ka bang sumama sa akin sa aking opisina?”"
       ],
-      "styleClass": "ADJ4SW",
+      "styleClass": "ADJ2SW",
       "bgAudio": "lukas_lightbulb/Audio/Tagalog/PAGE 36.wav",
       "comment": "36"
     },
@@ -544,7 +550,7 @@
     {
       "image": "lukas_lightbulb/Pages/CHAP 1_PAGE 38.png",
       "dialogue": [
-        "“Okay lang, Lukas. Ito ay isang lugar kung saan maaari kang magsabi. Makikinig ako at tutulungan kita.” Huminga nang malalim si Lukas at nilikom ang lahat ng lakas ng loob niya. “Naging kakaiba po si Sir Gino sa akin.” aminado niya. Binigyan siya ng guidance counselor ng isang maunawain na tingin. “Ano ang ginawa ni Sir Gino?” “Dinala po niya ako sa isang silid-aralan at sinabi na bibigyan niya ako ng espesyal na badge, pero sinusubukan niya akong hawakan.” Tumango ang guidance counselor."
+        "“Okay lang, Lukas. Ito ay isang lugar kung saan maaari kang magsabi. Makikinig ako at tutulungan ka.” Huminga nang malalim si Lukas at nilikom ang lahat ng lakas niyang loob. “Naging kakaiba po si Sir Gino sa akin.” aminado niya. Binigyan siya ng guidance counselor ng isang maunawaing tingin. “Ano ang ginawa ni Sir Gino?” “Dinala po niya ako sa isang classroom. Sabi niya bibigyan niya ako ng STAR, pero sinusubukan niya akong hawakan.” Tumango ang guidance counselor. \"Sinabi mo ba sa iba kung anong nangyari sayo?\""
       ],
       "styleClass": "ADJ4SW",
       "bgAudio": "lukas_lightbulb/Audio/Tagalog/PAGE 38.wav",
@@ -579,7 +585,7 @@
 
       "dialogueBoxes": [
         {
-          "text": "Dahan-dahang bumalik si Lukas sa kanyang matalino at matalas na sarili. Nadama niya na nawawala ang kanyang takot kapag may mga taong nagpoprotekta sa kanya, tulad ng guidance counselor at kanyang mga magulang.",
+          "text": "Dahan-dahang bumalik si Lukas sa kanyang matalino at matalas na sarili. Nadama niya na nawawala ang kanyang takot kapag may mga taong nagpoprotekta sa kanya, tulad ng guidance niya counselor at kanyang mga magulang.",
           "styleClass": "NE"
         },
         {
@@ -606,14 +612,20 @@
       "text": "Tumungo sa Leksyong Pangproteksyon!",
       "jumpTo": 44, 
       "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
-      "isNeutral": true
+      "isTranslucent": true
         },
         {
         "text": "Tumungo sa Mga Katanungan",
         "jumpTo": 43,
         "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
         "isTranslucent": true
-      }
+      },
+      {
+        "text": "Bumalik at subukan ang ibang pinagpipilian",
+        "jumpTo": 0,
+        "soundEffect": "MUSIC/SOUND EFFECTS/NEUTRAL.mp3",
+        "isTranslucent": true
+        }
     ]
 
     },
@@ -652,7 +664,7 @@
     },
     {
       "text": "Bumalik at subukan ang ibang pinagpipilian",
-      "jumpto": "0",
+      "jumpTo": 0,
       "soundEffect": "MUSIC/SOUND EFFECTS/NEUTRAL.mp3",
       "isTranslucent": true
     }
@@ -716,9 +728,17 @@
     {
       "image": "MINI LESSONS/LUKAS ML/TAGALOG Lukas ML/Lukas ML tag 13.png",
       "styleClass": "ADJSE",
-      "comment": "53",
+      "comment": "53"
+    },
+
+    {
+      "image": "Cover_Thumbnails/Reflection/hotline.png"
+    },
+
+    {
+      "image": "Cover_Thumbnails/CoverPage/Credits BG.png",
       "choiceQuestion": "Saan tayo susunod?",
-      "choiceStyle": "refl2",
+      "choiceStyle": "ADJSE",
       "choices": [
        {
       "text": "Simulan ang Susunod na Kabanata",

@@ -43,10 +43,6 @@
     "definition":"Ay ang gawain ng isang matanda o tao na nag-aalok sa iyo ng laruan, pagkain, o regalo pero ang kapalit ay gagawa kayo ng masama o isang bagay na ayaw mong gawin.",
     "type":"concept"
   },
-  "Gino": {
-    "definition": "Guro ni Lukas sa matematika na may itinatagong motibo",
-    "type": "character"
-  },
    "division": {
     "definition": "Isang operasyon sa matematika na naghahati ng isang numero sa pantay-pantay na bahagi",
     "type": "concept"
@@ -80,8 +76,133 @@
     "type": "concept"
   },
   "guidance counselor": {
-    "definition": "Isang propesyonal sa paaralan na nagbibigay ng suporta at payo sa mga estudyante tungkol sa kanilang akademiko, emosyonal, at sosyal na mga pangangailangan.",
+    "definition": "Isang propesyonal sa paaralan na nagbibigay ng suporta at payo sa mga estudyante tungkol sa kanilang akademiko, emosyonal, at sosyal na mga pangangailangan",
+    "type": "concept"
+  },
+  "kalasag": {
+    "definition": "Isang bagay na ginagamit upang protektahan ang sarili mula sa pinsala o panganib, tulad ng isang kalasag sa digmaan",
+    "type": "concept"
+  },
+  "determinado": {
+    "definition": "Isang katangian ng tao na may matibay na hangarin at hindi sumusuko sa kabila ng mga pagsubok",
+    "type": "concept"
+  },
+  "uhog": {
+    "definition": "Isang malapot na likido na nagmumula sa ilong at lalamunan, karaniwang dulot ng sipon o impeksyon",
+    "type": "concept"
+  },
+  "kapitan": {
+    "definition": "Isang taong may mataas na posisyon na namumuno sa isang grupo, organisasyon, o komunidad",
+    "type": "concept"
+  },
+  "captain": {
+    "definition": "Isang taong may mataas na posisyon na namumuno sa isang grupo, organisasyon, o komunidad",
+    "type": "concept"
+  },
+  "vest": {
+    "definition": "Isang uri ng damit na walang manggas na isinusuot sa itaas na bahagi ng katawan, karaniwang ginagamit para sa karagdagang proteksyon",
+    "type": "concept"
+  },
+  "kinikilatis": {
+    "definition": "Isang masusing pag-susuri ng isang bagay upang matiyak ang kondisyon o kalidad nito",
+    "type": "concept"
+  },
+  "kumpiyansa": {
+    "definition": "Tiwala sa sarili at sa sariling kakayahan",
+    "type": "concept"
+  },
+  "goop": {
+    "definition": "Kaparehas ng uhog, isa itong malapot na likido na nagmumula sa ilong at lalamunan, karaniwang dulot ng sipon o impeksyon",
+    "type": "concept"
+  },
+  "humihikbi": {
+    "definition": "Isang matinding pag-iyak dulot ng labis na kalungkutan",
+    "type": "concept"
+  },
+  "suso": {
+    "definition": "Isang bahagi ng katawan ng babae na ginagamit ng sanggol para sa pagpapasuso",
+    "type": "concept"
+  },
+  "dede": {
+    "definition": "Kapareha ng suso, isa itong bahagi ng katawan ng babae na ginagamit ng sanggol para sa pagpapasuso",
+    "type": "concept"
+  },
+  "pwet": {
+    "definition": "Isang bahagi ng katawan na nasa ibabang likod, karaniwang tinutukoy ang puwit o puwitan",
+    "type": "concept"
+  },
+  "pepe": {
+    "definition": "Isang ari ng babae na mahahanap sa ibabang bahagi ng katawan",
+    "type": "concept"
+  },
+  "binabagabag": {
+    "definition": "Isang pakiramdam ng pagkabalisa o matinding pagka-takot",
+    "type": "concept"
+  },
+  "bangungot": {
+    "definition": "Isang masamang panaginip na nagdudulot ng takot o pagkabalisa",
+    "type": "concept"
+  },
+  "psychologist": {
+    "definition": "Isang propesyonal na nag-aaral sa pag-iisip at pag-uugali ng tao, at nagbibigay ng suporta sa mga taong may emosyonal o mental na mga isyu",
+    "type": "concept"
+  },
+  "astig": {
+    "definition": "Isang salitang ginagamit upang ilarawan ang isang tao na kahanga-hanga",
+    "type": "concept"
+  },
+  "halikan": {
+    "definition": "Isang kilos ng pagdikit ng mga labi bilang pagpapakita ng pagmamahal o paggalang",
+    "type": "concept"
+  },
+  "pribadong parte ng katawan": {
+    "definition": "Mga bahagi ng katawan na karaniwang tinatakpan ng damit at hindi dapat ipakita sa iba, tulad ng mga ari at dibdib",
+    "type": "concept"
+  },
+  "hipuan": {
+    "definition": "Paghawak o pagdampi sa isang bagay o tao gamit ang kamay o ibang bahagi ng katawan",
+    "type": "concept"
+  },
+  "panloob": {
+    "definition": "Mga damit na isinusuot sa ilalim ng mga regular na damit, tulad ng salawal at kamiseta",
+    "type": "concept"
+  },
+  "guro": {
+    "definition": "Isang taong nagtuturo sa paaralan o nagbibigay ng edukasyon sa mga mag-aaral",
+    "type": "concept"
+  },
+  "teacher": {
+    "definition": "Isang taong nagtuturo sa paaralan o nagbibigay ng edukasyon sa mga mag-aaral",
+    "type": "concept"
+  },
+  "pagliban": {
+    "definition": "Hindi pagpasok sa paaralan o trabaho sa isang araw o higit pa, kadalasan dahil sa sakit o personal na dahilan.",
+    "type": "concept"
+  },
+  "malaswang": {
+    "definition": "Mga kilos o salita na hindi angkop sa mga bata.",
+    "type": "concept"
+  },
+  "maseselang": {
+    "definition": "Mga bagay na maaring makasira sa damdamin o hindi angkop sa mga bata.",
+    "type": "concept"
+  },
+  "Bea": {
+    "definition": "Isang labing-dalawang taong gulang na batang babae na may malawak na imahinasyon.",
+    "type": "character"
+  },
+  "Sarah": {
+    "definition": "Isang masayahing pitong taong gulang na bata na may espesyal na kapangyarihan.",
+    "type": "character"
+  },
+  "manika": {
+    "definition": "Isang laruan na hugis tao, karaniwang ginagamit ng mga bata sa paglalaro",
+    "type": "concept"
+  },
+   "bahagya": {
+    "definition": "Isang bagay na nangyayari nang kaunti o hindi ganap",
     "type": "concept"
   }
+
 
 }

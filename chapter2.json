@@ -28,11 +28,11 @@
     },
     {
       "startPage": 18,
-      "endPage": 28,
+      "endPage": 29,
       "music": "MUSIC/neutral.mp3"
     },
     {
-      "startPage": 29,
+      "startPage": 30,
       "endPage": 31,
       "music": "MUSIC/sad.mp3"
     },
@@ -43,11 +43,11 @@
     },
     {
       "startPage": 37,
-      "endPage": 45,
+      "endPage": 47,
       "music": "MUSIC/sincere.mp3"
     },
     {
-      "startPage": 46,
+      "startPage": 48,
       "endPage": 49,
       "music": "MUSIC/happy.mp3"
     },
@@ -795,7 +795,7 @@
     },
 
     {
-      "image": "beas_bubbles/Pages/pg 32B (FLATTENED).png",
+      "image": "beas_bubbles/Pages/pg 47 (FLATTENED).png",
       "dialogue": [
         "Bea smiles at her grandma. She is so happy, safe, and free! Her magical bubbles form around her again, keeping her clean and protected. She blows them all away, for the first time in a long time, she laughs."
       ],
@@ -865,14 +865,20 @@
       "text": "Try The Mini Lessons!",
       "jumpTo": 77,
       "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
-      "isNeutral":true
+      "isTranslucent": true
       },
         {
         "text": "Go To Reflection",
         "jumpTo": 76,
         "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
         "isTranslucent": true
-      }
+      },
+      {
+      "text": "Go Back and Try Other Paths",
+      "jumpTo": 0,
+      "soundEffect": "MUSIC/SOUND EFFECTS/NEUTRAL.mp3",
+      "isTranslucent": true
+    }
     ]
     },
 
@@ -1080,12 +1086,8 @@
       "image": "beas_bubbles/Pages/pg 33B (FLATTENED).png",
       "dialogueBoxes": [
         {
-          "text": "After a few days, Bea's mom comes back to Grandma's house. She runs to Bea and hugs her tightly. \"I'm sorry, Bea,\" she says, apologizing again for not listening to her when Bea needed her the most.",
-          "styleClass": "NW"
-        },
-        {
-          "text": "\"I promise that I'll be a warrior for you, a warrior with the biggest shield you'll ever see and the strongest hands you'll ever hold.\" Bea's mom says.",
-          "styleClass": "SW"
+          "text": "After a few days, Bea's mom comes back to Grandma's house. She runs to Bea and hugs her tightly. \"I'm sorry, Bea,\" she says, apologizing again for not listening to her when Bea needed her the most. I promise that I'll be a warrior for you, a warrior with the biggest shield you'll ever see and the strongest hands you'll ever hold.\" Bea's mom says.",
+          "styleClass": "ADJWW"
         }
       ],
       "bgAudio": "beas_bubbles/Audio/English/PAGE 33B.wav",
@@ -1153,24 +1155,30 @@
       "dialogue": [
         "Even when bad things have happened, Mom and Grandma are always there for her and are doing their best to make her feel okay again. \"It might be hard now, but soon, I'll be okay again.\" She tells herself."
       ],
-      "styleClass": "SE",
+      "styleClass": "ADJ2NE",
       "bgAudio": "beas_bubbles/Audio/English/PAGE 39B.wav",
       "comment": "75",
-      "choiceStyle": "ADJSW",
+      "choiceStyle": "ADJSE",
       "choiceQuestion": "Let's Reflect on Bea's Journey!",
       "choices": [
         {
       "text": "Try The Mini Lessons!",
       "jumpTo": 77,
       "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
-      "isNeutral":true
+      "isTranslucent":true
       },
         {
         "text": "Go To Reflection",
         "jumpTo": 76,
         "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
         "isTranslucent": true
-      }
+      },
+      {
+      "text": "Go Back and Try Other Paths",
+      "jumpTo": 0,
+      "soundEffect": "MUSIC/SOUND EFFECTS/NEUTRAL.mp3",
+      "isTranslucent": true
+    }
     ]
     },
 
@@ -1209,7 +1217,7 @@
     },
     {
       "text": "Go Back and Try Other Paths",
-      "jumpTo": "0",
+      "jumpTo": 0,
       "soundEffect": "MUSIC/SOUND EFFECTS/NEUTRAL.mp3",
       "isTranslucent": true
     }
@@ -1236,9 +1244,17 @@
     {
       "image": "MINI LESSONS/Bea ML/ENGLISH Bea ML/Bea ML en 4.png",
       "styleClass": "ADJSE",
-      "comment": "81",
+      "comment": "81"
+    },
+
+    {
+      "image": "Cover_Thumbnails/Reflection/hotline.png"
+    },
+
+    {
+      "image": "Cover_Thumbnails/CoverPage/Credits BG.png",
       "choiceQuestion": "Where To Next?",
-      "choiceStyle": "refl2",
+      "choiceStyle": "ADJSE",
       "choices": [
        {
       "text": "Start Next Chapter",
@@ -1246,13 +1262,11 @@
       "specialData": { "chapterNumber": 3 },
       "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
       "isNeutral":true
-
-      
       },
 
       {
       "text": "Back To Reflection",
-      "jumpTo": 76,
+      "jumpTo": 43,
       "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
       "isNeutral":true,
       "isTranslucent": true
@@ -1264,7 +1278,7 @@
       
     }
 
-
+    
 
   ]
 }

@@ -9,7 +9,7 @@
     {
       "startPage": 0,
       "endPage": 1,
-      "music": "MUSIC/neutral.mp3"
+      "music": "MUSIC/happy.mp3"
     },
     {
       "startPage": 2,
@@ -271,7 +271,7 @@
 
 
     {
-      "image": "sarahs_super_strength/Pages/pg 11.png",
+      "video": "sarahs_super_strength/Pages/PAGE 11.mp4",
       "dialogue": [
         "Sarah drops her head low and stays silent, so Bea sits beside her and speaks up \"You know, sometimes, even our best friends and the ones we love the most can hurt us and make us feel sad and uncomfortable, but if we don’t speak and stand up for ourselves, They will keep on hurting us and make us feel sad. That’s why we need courage and trust in ourselves.\""
       ],
@@ -281,7 +281,7 @@
     },
 
     {
-      "image": "sarahs_super_strength/Pages/pg 12.png",
+      "video": "sarahs_super_strength/Pages/PAGE 12.mp4",
       "dialogue": [
         "As Bea was talking to Sarah, a shy boy named Lukas approaches them.  \"I went through something similar too but I found the courage to stand up for myself, and when I did, my powers appeared!\" Lukas shares. "
       ],
@@ -291,7 +291,7 @@
     },
 
         {
-      "image": "sarahs_super_strength/Pages/PAGE 13.png",
+      "video": "sarahs_super_strength/Pages/PAGE 13.mp4",
       "dialogue": [
         "Lukas shows Sarah his powers, and Sarah watches in amazement. She finds that Bea and Lukas are kind, honest, and respectful of her boundaries. She starts to feel safe with them, so she finally tells them what happened.<br><br>Lukas and Bea gently ask if they can hug her for comfort, and Sarah nods. As they hug, Sarah whispers \"I wish I had powers too.\""
       ],
@@ -301,7 +301,7 @@
     },
 
     {
-      "image": "sarahs_super_strength/Pages/pg 14.png",
+      "video": "sarahs_super_strength/Pages/PAGE 14.mp4",
       "dialogue": [
         "They smile, and Lukas tells her \"I think you do, Sarah! You just need to seek it and wield it.\" "
       ],
@@ -311,7 +311,7 @@
     },
 
     {
-      "image": "sarahs_super_strength/Pages/pg 15.png",
+      "video": "sarahs_super_strength/Pages/PAGE 15.mp4",
       "dialogue": [
         "Sarah stands up to her old friends when they try to threaten her again in an empty classroom. With each step, the ground rumbles and cracks, leaving them stunned. "
       ],
@@ -321,7 +321,7 @@
     },
 
     {
-      "image": "sarahs_super_strength/Pages/pg 16.png",
+      "video": "sarahs_super_strength/Pages/PAGE 16.mp4",
       "dialogue": [
         "\"I HAVE POWERS, TOO!!\" Sarah declares. She firmly tells them she doesn’t like what they’ve been doing, it hurt her, and it wasn't okay. She reminds them that it’s wrong and uncool, and that her parents taught her it’s not something kids should do."
       ],
@@ -331,7 +331,7 @@
     },
 
     {
-      "image": "sarahs_super_strength/Pages/pg 17.png",
+      "video": "sarahs_super_strength/Pages/PAGE 17.mp4",
       "dialogue": [
         "Pearl and the girls were shocked by Sarah’s strength. Ashley and Yani quickly apologize, saying they only followed Pearl. Pearl stays quiet in fear and shock."
       ],
@@ -341,7 +341,7 @@
     },
 
     {
-      "image": "sarahs_super_strength/Pages/pg 18.png",
+      "video": "sarahs_super_strength/Pages/PAGE 18.mp4",
       "dialogue": [
         "But soon enough Pearl admits that she was wrong. She thought it was cool because she learned it from her Big Brother. She confesses that her big brother had told her to take pictures of her friends in secret, in exchange he promised her new dolls if she does."
       ],
@@ -351,7 +351,7 @@
     },
 
     {
-      "image": "sarahs_super_strength/Pages/pg 19.png",
+      "video": "sarahs_super_strength/Pages/PAGE 19.mp4",
       "dialogue": [
         "Hearing the commotion, Teacher Lydia walks in and asks what happened. Pearl tells the truth, and all three girls apologize. Though upset, Teacher Lydia understands and tells them they need to speak with the principal and guidance counselor to make things right. "
       ],
@@ -371,7 +371,7 @@
     },
 
     {
-      "image": "sarahs_super_strength/Pages/PAGE 20.png",
+      "video": "sarahs_super_strength/Pages/PAGE 20.mp4",
       "dialogue": [
         "Sarah returns to the playground to find Bea and Lukas. Sarah tells them about what happened, and they beam up at her courage, telling her they’re proud of her. They laugh, share stories, and practice their powers together, promising to always support and protect each other. With their newfound power and friendship, they face each day without fear."
       ],
@@ -385,14 +385,20 @@
         "text": "Try The Mini Lessons!",
         "jumpTo": 32,
         "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
-        "isNeutral":true
+        "isTranslucent":true
         },
         {
         "text": "Go To Reflection",
         "jumpTo": 31,
         "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
         "isTranslucent": true
-      }
+      },
+      {
+      "text": "Go Back and Try Other Paths",
+      "jumpTo": 0,
+      "soundEffect": "MUSIC/SOUND EFFECTS/NEUTRAL.mp3",
+      "isTranslucent": true
+    }
         
       ]
       
@@ -410,7 +416,7 @@
     },
 
     {
-      "image": "sarahs_super_strength/Pages/pg 21.png",
+      "video": "sarahs_super_strength/Pages/PAGE 21.mp4",
       "dialogue": [
         "That day, Sarah stays at home, in fear of what bad things Pearl is going make her do again. The days turn into weeks of not going to school out of fear and shame."
       ],
@@ -420,7 +426,7 @@
     },
 
         {
-      "image": "sarahs_super_strength/Pages/pg 22.png",
+      "video": "sarahs_super_strength/Pages/PAGE 22.mp4",
       "dialogue": [
         "Teacher Lydia started to get worried. \"What has happened to Sarah?\" She thinks to herself, but just then, Sarah enters the classroom with tears in her eyes."
       ],
@@ -430,7 +436,7 @@
     },
 
          {
-      "image": "sarahs_super_strength/Pages/pg 23.png",
+      "video": "sarahs_super_strength/Pages/PAGE 23.mp4",
       "dialogueBoxes": [
         {
           "text": "Teacher Lydia, I won’t be going to school anymore.\" Sarah says, sniffling while handing her a piece of paper. Teacher Lydia takes the paper and reads the reason for her absence. ",
@@ -446,7 +452,7 @@
     },
 
         {
-      "image": "sarahs_super_strength/Pages/pg 24.png",
+      "video": "sarahs_super_strength/Pages/PAGE 24.mp4",
       "dialogue": [
         "During recess, Teacher Lydia brings Pearl and her friends aside, telling them that what they did was bad.<br><br>\"Pearl, what you and your friends were doing was wrong.\" She says firmly. \"This is not good behavior for someone your age. Forcing someone to look at pornography and show their private parts is very wrong. I hope you can apologize to Sarah before she leaves.\""
       ],
@@ -456,7 +462,7 @@
     },
 
         {
-      "image": "sarahs_super_strength/Pages/pg 19.2 and 25.png",
+      "video": "sarahs_super_strength/Pages/PAGE 25.mp4",
       "dialogue": [
         "Pearl and her friends go to Sarah, who’s hiding behind Teacher Lydia. \"I’m sorry, Sarah. I thought it was the coolest thing to do, but it wasn’t right.\" Pearl apologizes sincerely. \"We’re sorry, too!\" Pearl’s friends say with sorry expressions."
       ],
@@ -466,7 +472,7 @@
     },
 
         {
-      "image": "sarahs_super_strength/Pages/PAGE 26.png",
+      "video": "sarahs_super_strength/Pages/PAGE 26.mp4",
       "dialogue": [
         "Sarah picks up her bag and waves goodbye to everyone at school. Pearl watches her as she goes past the gates. What Pearl did wasn't the best, but she swears to never make the same mistake ever again from that day on."
       ],
@@ -480,14 +486,20 @@
         "text": "Try The Mini Lessons!",
         "jumpTo": 32,
         "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
-        "isNeutral":true
+        "isTranslucent":true
         },
         {
         "text": "Go To Reflection",
         "jumpTo": 31,
         "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
         "isTranslucent": true
-      }
+      },
+      {
+      "text": "Go Back and Try Other Paths",
+      "jumpTo": 0,
+      "soundEffect": "MUSIC/SOUND EFFECTS/NEUTRAL.mp3",
+      "isTranslucent": true
+    }
         
       ]
     },
@@ -525,7 +537,7 @@
     },
     {
       "text": "Go Back and Try Other Paths",
-      "jumpto": "0",
+      "jumpTo": 0,
       "soundEffect": "MUSIC/SOUND EFFECTS/NEUTRAL.mp3",
       "isTranslucent": true
     }
@@ -574,9 +586,18 @@
     {
       "image": "MINI LESSONS/Sarah ML/ENGLISH Sarah ML/Sarah ML en 9.png",
       "styleClass": "ADJSE",
-      "comment": "53",
+      "comment": "53"
+    },
+
+
+    {
+      "image": "Cover_Thumbnails/Reflection/hotline.png"
+    },
+
+    {
+      "image": "Cover_Thumbnails/CoverPage/Credits BG.png",
       "choiceQuestion": "Where To Next?",
-      "choiceStyle": "refl2",
+      "choiceStyle": "ADJSE",
       "choices": [
        {
       "text": "End Journey",

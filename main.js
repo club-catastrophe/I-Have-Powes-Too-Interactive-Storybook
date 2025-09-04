@@ -11,10 +11,8 @@ function createWindow() {
     }
   });
 
-  // Remove the default menu bar
   Menu.setApplicationMenu(null);
 
-  // Load your main HTML file
   win.loadFile(path.join(__dirname, "ihptmain.html"));
 }
 

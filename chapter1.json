@@ -182,7 +182,7 @@
       "dialogue": [
         "Sir Gino leads Lukas to a quiet part of the school. The corridors are eerily empty and dark. \"Why are we here in this part of the school? This is weird.\" Lukas thinks to himself again. It feels strange to walk in these parts alone with his teacher. Lukas is starting to suspect that Sir Gino is going to do something bad."
       ],
-      "styleClass": "ADJ4NE",
+      "styleClass": "ADJEE",
       "bgAudio": "lukas_lightbulb/Audio/English/PAGE 12.wav",
       "comment": "12"
     },
@@ -232,7 +232,7 @@
     {
       "image": "lukas_lightbulb/Pages/CHAP 1_PAGE 16.png",
       "choiceQuestion": "Lukas thought about what he should do. Was this a dangerous situation?",
-      "choiceStyle": "ADJSW",
+      "choiceStyle": "ADJSE",
       "choices": [
         {
           "text": "Yes",
@@ -248,9 +248,9 @@
         }
       ],
       "dialogue": [
-        "The shadow’s hand stretches out and creeps onto the floor, onto the ceiling, then near his shoulder. The sharp, dark fingers inch closer to Lukas, trying to touch him. He is frightened, and wants to get out of here, now!<br><br> “Do you want to learn with me, Lukas? I promise that you’ll enjoy it.” Sir Gino asks, his voice sweet and gentle. But Lukas feels confused."
+        "The shadow’s hand stretches out and creeps onto the floor, onto the ceiling, then near his shoulder. The sharp, dark fingers inch closer to Lukas, trying to touch his pants. He is frightened, and wants to get out of here, now!<br><br> “Do you want to learn with me, Lukas? I promise that you’ll enjoy it.” Sir Gino asks, his voice sweet and gentle. But Lukas feels confused. 'Sir Gino is not being honest!' He thinks to himself."
       ],
-      "styleClass": "ADJ2NW",
+      "styleClass": "ADJ2WW",
       "bgAudio": "lukas_lightbulb/Audio/English/PAGE 16.wav",
       "comment": "16"
     },
@@ -309,7 +309,7 @@
     {
       "image": "lukas_lightbulb/Pages/CHAP 1_PAGE 21.png",
       "dialogue": [
-        "\"He told me to come with him so I can get a reward, but he was being weird and scary.\" \"But why would he do that? You're his favorite.\" This hurt Lukas deep inside. He doesn't like what his classmate said, but he doesn't know what to reply. Instead, he just puts his head low. Shortly, his classmate left to play with her friends, leaving Lukas all alone."
+        "\"He told me to come with him so I can get a reward, but he was being weird and scary.\" \"But why would he do that? You're his favorite.\" This hurt Lukas deep inside. He doesn't like what his classmate said, but he doesn't know what to reply. Instead, he just puts his head low. Shortly, his classmate left to play with her friends, leaving Lukas all alone. Lukas went home."
       ],
       "styleClass": "ADJ2SW",
       "bgAudio": "lukas_lightbulb/Audio/English/PAGE 21.wav",
@@ -324,13 +324,13 @@
           "text": "Yes",
           "jumpTo": 23,
           "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
-          "isNeutral": true
+          "isWrong": false
         },
         {
           "text": "No",
           "jumpTo": 34,
           "soundEffect": "MUSIC/SOUND EFFECTS/WRONG.mp3",
-          "isNeutral": true
+          "isWrong": true
         }
       ],
       "dialogue": [
@@ -368,7 +368,7 @@
     {
       "image": "lukas_lightbulb/Pages/CHAP 1_PAGE 24.png",
       "dialogue": [
-        "\" “Sir Gino told me to follow him so he could give me a special badge. Then he started acting really weird and began to touch me. I had to run away!”\""
+        "\" “Sir Gino told me to follow him so he could give me a special badge. Then he started acting really weird and began to touch my pants. I had to run away!”\""
       ],
       "styleClass": "SE",
       "bgAudio": "lukas_lightbulb/Audio/English/PAGE 24.wav",
@@ -479,32 +479,36 @@
       "comment": "32"
     },
     {
-      "image": "lukas_lightbulb/Pages/CHAP 1_PAGE 33.png",
-      "dialogue": [
-        "Lukas nods with enthusiasm before waving goodbye to his mom and dad. He enters the school with a bright smile. He is safe, knowing that his parents will always have his back. Having loved ones listen and protect helps fear turn into courage."
-      ],
-      "styleClass": "ADJ2SW",
-      "bgAudio": "lukas_lightbulb/Audio/English/PAGE 33 END 1.wav",
-      "comment": "33",
-      "choiceStyle": "ADJSE",
-      "choiceQuestion": "Let's Reflect on Lukas's Journey!",
-      "choices": [
-        {
-        "text": "Try The Mini Lessons",
-        "jumpTo": 44,
-        "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
-        "isNeutral":true
-        },
-        {
-        "text": "Go To Reflection",
-        "jumpTo": 43,
-        "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
-        "isTranslucent": true
-      }
-    ]
-      
-      
+  "image": "lukas_lightbulb/Pages/CHAP 1_PAGE 33.png",
+  "dialogue": [
+    "Lukas nods with enthusiasm before waving goodbye to his mom and dad. He enters the school with a bright smile. He is safe, knowing that his parents will always have his back. Having loved ones listen and protect helps fear turn into courage."
+  ],
+  "styleClass": "ADJ2SW",
+  "bgAudio": "lukas_lightbulb/Audio/English/PAGE 33 END 1.wav",
+  "comment": "33",
+  "choiceStyle": "ADJSE",
+  "choiceQuestion": "Let's Reflect on Lukas's Journey!",
+  "choices": [
+    {
+      "text": "Try The Mini Lessons",
+      "jumpTo": 44,
+      "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
+      "isTranslucent": true
     },
+    {
+      "text": "Go To Reflection",
+      "jumpTo": 43,
+      "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
+      "isTranslucent": true
+    },
+    {
+      "text": "Go Back and Try Other Paths",
+      "jumpTo": 0,
+      "soundEffect": "MUSIC/SOUND EFFECTS/NEUTRAL.mp3",
+      "isTranslucent": true
+    }
+  ]
+},
     {
       "image": "lukas_lightbulb/Pages/CHAP 1_PAGE 34.png",
       "dialogue": [
@@ -562,7 +566,7 @@
           "styleClass": "SE"
         }
       ],
-      "bgAudio": "lukas_lightbulb/Audio/English/PAGE 39.wav",
+      "bgAudio": "lukas_lightbulb/Audio/English/PAGE 39a.wav",
       "comment": "39"
     },
     {
@@ -594,18 +598,24 @@
       "choiceStyle": "ADJSW",
       "choiceQuestion": "Let's Reflect on Lukas's Journey!",
       "choices": [
-        {
+      {
         "text": "Try The Mini Lessons",
         "jumpTo": 44,
         "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
-        "isNeutral":true
-        },
-        {
+        "isTranslucent": true
+      },
+      {
         "text": "Go To Reflection",
         "jumpTo": 43,
         "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
         "isTranslucent": true
-      }
+      },
+      {
+      "text": "Go Back and Try Other Paths",
+      "jumpTo": 0,
+      "soundEffect": "MUSIC/SOUND EFFECTS/NEUTRAL.mp3",
+      "isTranslucent": true
+    }
     ]
     },
 
@@ -643,7 +653,7 @@
     },
     {
       "text": "Go Back and Try Other Paths",
-      "jumpTo": "0",
+      "jumpTo": 0,
       "soundEffect": "MUSIC/SOUND EFFECTS/NEUTRAL.mp3",
       "isTranslucent": true
     }
@@ -709,9 +719,17 @@
     {
       "image": "MINI LESSONS/LUKAS ML/ENGLISH LUKAS ML/Lukas ML en 13.png",
       "styleClass": "ADJSE",
-      "comment": "53",
+      "comment": "53"
+    },
+
+    {
+      "image": "Cover_Thumbnails/Reflection/hotline.png"
+    },
+
+    {
+      "image": "Cover_Thumbnails/CoverPage/Credits BG.png",
       "choiceQuestion": "Where To Next?",
-      "choiceStyle": "refl2",
+      "choiceStyle": "ADJSE",
       "choices": [
        {
       "text": "Start Next Chapter",
@@ -719,8 +737,6 @@
       "specialData": { "chapterNumber": 2 },
       "soundEffect": "MUSIC/SOUND EFFECTS/CORRECT.mp3",
       "isNeutral":true
-
-      
       },
 
       {

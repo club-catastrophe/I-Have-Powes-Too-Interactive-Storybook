@@ -190,6 +190,21 @@
   max-height: 45%;
 }
 
+.dialogue-box.ADJEE {
+  bottom: 25%;
+  left: 65%;
+  width: 25%;
+  max-height: 55%;
+}
+
+.dialogue-box.ADJ2EE {
+  bottom: 25%;
+  left: 65%;
+  width: 25%;
+  max-height: 55%;
+}
+
+
 .dialogue-box.SW {
   bottom: 10%;
   left: 10%;
@@ -222,6 +237,14 @@
   bottom: 4%;
   left: 8%;
   width: 73%;
+  max-height: 31%;
+}
+
+
+.dialogue-box.ADJ5SW {
+  bottom: 4%;
+  left: 4%;
+  width: 90%;
   max-height: 31%;
 }
 
