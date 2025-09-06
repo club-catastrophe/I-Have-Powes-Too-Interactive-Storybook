@@ -106,6 +106,7 @@
     },
 
     {
+       "video": "beas_bubbles/Pages/PAGE 3.mp4",
       "image": "beas_bubbles/Pages/pg 3 (FLATTENED).png",
       "dialogueBoxes": [
         {
@@ -118,6 +119,7 @@
     },
 
     {
+       "video": "beas_bubbles/Pages/PAGE 4.mp4",
       "image": "beas_bubbles/Pages/pg 4 (FLATTENED).png",
       "styleClass": "SE",
       "comment": "3",
@@ -134,6 +136,7 @@
     },
 
     {
+       "video": "beas_bubbles/Pages/PAGE 4.mp4",
       "image": "beas_bubbles/Pages/pg 4 (FLATTENED).png",
       "dialogue": [
         "\"Nag-aalala ako na hindi kami magiging masaya na pamilya. Natatakot din akong humindi. Tatay ko siya. Mahirap na hindi ako sumunod sa kanya…\" Kaya't nanahimik na lang si Bea at hinayaan niya na lang na gawin ng kanyang tatay ang gusto niyang gawin."
@@ -144,6 +147,7 @@
     },
 
     {
+       "video": "beas_bubbles/Pages/PAGE 5.mp4",
       "image": "beas_bubbles/Pages/pg 5 (FLATTENED).png",
       "dialogue": [
         "Habang lumilipas ang mga araw, kumalat na ang mala-uhog na likido sa buong bahay! Sa sopa, sa refrigerator, sa lamesa, sa lahat ng lugar! Nagsimula na rin itong dumikit kay Bea! \"Nandidiri ako, ayoko na tumira sa bahay na ito…\" bulong ni Bea sa sarili. Ito ang pinakamalungkot na nararamdaman niya sa buong buhay niya."
@@ -154,6 +158,7 @@
     },
 
     {
+        "video": "beas_bubbles/Pages/PAGE 6.mp4",
       "image": "beas_bubbles/Pages/pg 6 (FLATTENED).png",
       "dialogueBoxes": [
         {
@@ -202,6 +207,7 @@
     },
 
     {
+       "video": "beas_bubbles/Pages/PAGE 10.mp4",
       "image": "beas_bubbles/Pages/pg 10 (FLATTENED).png",
       "dialogueBoxes": [
         {
@@ -284,6 +290,7 @@
     },
 
     {
+       "video": "beas_bubbles/Pages/PAGE 16.mp4",
       "image": "beas_bubbles/Pages/pg 16 (FLATTENED).png",
       "dialogue": [
         "Ayaw ni Bea pumunta sa kanya. Sinusubukan niyang magsalita ngunit, nararamdaman niya na parang napupuno ng likidong parang uhog ang kanyang bibig at hindi siya maka-hindi."
@@ -310,6 +317,7 @@
     },
 
     {
+       "video": "beas_bubbles/Pages/PAGE 17.mp4",
       "image": "beas_bubbles/Pages/pg 17 (FLATTENED).png",
       "dialogue": [
         "\"Bakit ganito? Sabi ni Papa mahal niya ako at nagmamalasakit siya sa akin. Kung mahal niya ako, hindi ko dapat maramdaman 'tong nakakadiring pakiramdam kapag kasama ko siya. Hindi ko dapat maramdaman ang lahat ng masamang damdamin na ito...\" bulong ni Bea sa sarili."
@@ -320,6 +328,7 @@
     },
 
     {
+       "video": "beas_bubbles/Pages/PAGE 18.mp4",
       "image": "beas_bubbles/Pages/pg 18 (FLATTENED).png",
       "dialogue": [
         "Mas kumalat na ang likidong parang uhog sa bahay, at mas lalong nagiging kadiri. \"Di ko na kaya ito.\" sinabi niya sa kanyang sarili. Ngunit, inaalala niya pa din ang kanilang \"sikreto\". Iniisip niya uli na magsabi sa kahit kanino sa mga nangyayari."
@@ -547,7 +556,7 @@
     {
       "image": "beas_bubbles/Pages/pg 31 (FLATTENED).png",
       "dialogue": [
-        "Nagtaka siya kung bakit hindi siya tinulungan ni Aling Inday, pagkatapos ay naalala niya ang mga sinabi ng kanyang lola, \"Magkakaroon ng mga taong hindi maniniwala sa'yo, ang iba ay maaring pipigilan ka sa pagsasalita, pero magpatuloy ka lang sa pagsasabi hanggang sa may isang taong maniwala.\""
+        "Nagtaka siya kung bakit hindi siya tinulungan ni Aling Inday, pagkatapos ay naalala niya ang mga sinabi ng kanyang lola, \"Magkakaroon ng mga taong hindi maniniwala sa'yo, ang iba ay maaring pipigilan ka sa pagsasalita, pero kailanagn mong magpatuloy hanggang sa may isang taong maniwala.\""
       ],
       "styleClass": "NN",
       "bgAudio": "beas_bubbles/Audio/Tagalog/PAGE 31.wav",
@@ -557,7 +566,7 @@
     {
       "image": "beas_bubbles/Pages/pg 32 (FLATTENED).png",
       "dialogue": [
-        "\"Baka hindi mandirigma si Aling Inday. Baka wala siyang matapang na puso at malakas na kamay… at ayos lang 'yon. Alam kong mas marami pang taong tutulong sa akin. Kailangan ko lang magpatuloy sa pagsasabi!\""
+        "\"Baka hindi mandirigma si Aling Inday. Baka wala siyang matapang na puso at malakas na kamay… at ayos lang 'yon. Alam kong may marami pang taong tutulong sa akin. Kailangan ko lang magpatuloy sa pagsasabi!\""
       ],
       "styleClass": "EE",
       "bgAudio": "beas_bubbles/Audio/Tagalog/PAGE 32.wav",
@@ -728,7 +737,7 @@
       "image": "beas_bubbles/Pages/pg 43 (FLATTENED).png",
       "dialogueBoxes": [
         {
-          "text": "\"Ah...\" tahimik na sabi ni Bea. \"Sabi ni Tatay, kapag sinabi ko raw sa kahit sino, masisira ang pamilya natin... Sinira ko ba ang pamilya natin, Lola?\" tanong pa niya kay Lola.",
+          "text": "\"Ah...\" tahimik na sabi ni Bea. \"Sabi ni Tatay, kapag sinabi ko raw sa kahit sino, masisira ang pamilya natin... Sinira ko ba ang pamilya natin, Lola?\" tanong niya pa kay Lola.",
           "styleClass": "NE"
         },
         {
@@ -753,7 +762,7 @@
     {
       "image": "beas_bubbles/Pages/pg 45 (FLATTENED).png",
       "dialogue": [
-        "Mahabang nag-isip si Bea tungkol sa lahat ng nangyari. \"Hindi ko po alam kung mahal ako ni Papa, Lola, dahil marami po siyang masasamang ginawa sa akin. Sabi niya mahal niya ako, pero ginawa pa rin niya 'yung masama, nakakatakot, at nakakadiring bagay...\" bulong ni Bea, habang nanginginig."
+        "Mahabang nag-isip si Bea tungkol sa lahat ng nangyari. \"Hindi ko po alam kung mahal ako ni Papa, Lola, dahil marami na po siyang masasamang ginawa sa akin. Sabi niya mahal niya ako, pero ginawa pa rin niya 'yung masama, nakakatakot, at nakakadiring bagay...\" bulong ni Bea, habang nanginginig."
       ],
       "styleClass": "SE",
       "bgAudio": "beas_bubbles/Audio/Tagalog/PAGE 45.wav",
@@ -784,11 +793,11 @@
       "image": "beas_bubbles/Pages/pg 48 (FLATTENED).png",
       "dialogueBoxes": [
         {
-          "text": "Pagkaraan ng ilang araw, dumating ang nanay ni Bea sa bahay ng lola niya para makita siya. Tumunog ito papalapit kay Bea at niyakap siya nang mahigpit.",
+          "text": "Pagkaraan ng ilang araw, dumating ang nanay ni Bea sa bahay ng lola niya para makita siya. Tumakbo ito papalapit kay Bea at niyakap siya nang mahigpit.",
           "styleClass": "ADJ2NE"
         },
         {
-          "text": "\"Patawad, Bea,\" sabi ni Nanay, humihingi ng paumanhin dahil hindi siya nakinig kay Bea noong kailangan siya nito. \"Ipinapangako ko na magiging mandirigma ako para sa iyo, isang mandirigma na may pinakamalaking kalasag na makikita mo at pinakamalakas na mga kamay na mahahawakan mo,\" sabi niya.",
+          "text": "\"Patawad, Bea,\" sabi ni Nanay, humihingi ng paumanhin ito dahil hindi siya nakinig kay Bea noong kailangan siya nito. \"Ipinapangako ko na magiging mandirigma ako para sa iyo, isang mandirigma na may pinakamalaking kalasag na makikita mo at pinakamalakas na mga kamay na mahahawakan mo,\" sabi niya.",
           "styleClass": "ADJ2SW"
         }
       ],
@@ -931,7 +940,7 @@
           "styleClass": "ADJ2SW"
         },
         {
-          "text": "\"Ayos lang, mahal. Ligtas ka na sa amin ngayon,\" sabi ng nanay ni Bea. \"Hindi mo kasalanan. Isa kang bata. Nalilito ka at natatakot. Ako ang dapat humingi ng tawad, dahil ako ang dapat na nagprotekta sa iyo,\" umiiyak na sabi ng nanay ni Bea.",
+          "text": "\"Ayos lang, mahal. Ligtas ka na sa amin ngayon,\" sabi ng nanay ni Bea. \"Hindi mo kasalanan. Isa kang bata. Nalilito ka at natatakot. Ako ang dapat humingi ng tawad, dahil ako ang dapat na nagprotekta sa iyo.\" Sabi ng nanay ni Bea.",
           "styleClass": "ADJSE"
         }
       ],

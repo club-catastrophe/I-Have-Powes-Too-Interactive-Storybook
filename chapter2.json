@@ -110,6 +110,7 @@
     },
 
     {
+      "video": "beas_bubbles/Pages/PAGE 3.mp4",
       "image": "beas_bubbles/Pages/pg 3 (FLATTENED).png",
       "dialogueBoxes": [
         {
@@ -126,6 +127,7 @@
     },
 
     {
+      "video": "beas_bubbles/Pages/PAGE 4.mp4",
       "image": "beas_bubbles/Pages/pg 4 (FLATTENED).png",
       "styleClass": "SE",
       "comment": "3",
@@ -142,6 +144,7 @@
     },
 
     {
+      "video": "beas_bubbles/Pages/PAGE 4.mp4",
       "image": "beas_bubbles/Pages/pg 4 (FLATTENED).png",
       "dialogue": [
         "\"...I'm worried we won't be a happy family anymore. I am scared to say \"No\" to him, too. He is my dad. It's hard to disobey him.\" So, Bea just keeps quiet and lets her dad do what he wants."
@@ -151,7 +154,7 @@
       "comment": "4"
     },
 
-    {
+    { "video": "beas_bubbles/Pages/PAGE 5.mp4",
       "image": "beas_bubbles/Pages/pg 5 (FLATTENED).png",
       "dialogue": [
         "As days pass by, the goop starts spreading all over the house! The couch, the refrigerator, the table, everywhere! It even started sticking to Bea! \"I feel so icky, I don't want to be in this house anymore…\" Bea thinks to herself. This is the saddest she's ever been."
@@ -161,7 +164,7 @@
       "comment": "5"
     },
 
-    {
+    { "video": "beas_bubbles/Pages/PAGE 6.mp4",
       "image": "beas_bubbles/Pages/pg 6 (FLATTENED).png",
       "dialogueBoxes": [
         {
@@ -177,7 +180,7 @@
       "comment": "6"
     },
 
-    {
+    { 
       "image": "beas_bubbles/Pages/pg 8 (FLATTENED).png",
       "dialogueBoxes": [
         {
@@ -209,7 +212,7 @@
       "comment": "8"
     },
 
-    {
+    { "video": "beas_bubbles/Pages/PAGE 10.mp4",
       "image": "beas_bubbles/Pages/pg 10 (FLATTENED).png",
       "dialogueBoxes": [
         {
@@ -299,7 +302,8 @@
       "comment": "14"
     },
 
-    {
+    { 
+      "video": "beas_bubbles/Pages/PAGE 16.mp4",
       "image": "beas_bubbles/Pages/pg 16 (FLATTENED).png",
       "dialogue": [
         "She can't say anything…so she ends up just giving in to what her dad wants."
@@ -326,6 +330,7 @@
     },
 
     {
+       "video": "beas_bubbles/Pages/PAGE 17.mp4",
       "image": "beas_bubbles/Pages/pg 17 (FLATTENED).png",
       "dialogue": [
         "\"How can this be? My dad says he loves and cares for me. If he loves me, I shouldn't feel icky when I'm with him. I shouldn't feel all these bad feelings…\" Bea thinks to herself."
@@ -336,6 +341,7 @@
     },
 
     {
+       "video": "beas_bubbles/Pages/PAGE 18.mp4",
       "image": "beas_bubbles/Pages/pg 18 (FLATTENED).png",
       "dialogue": [
         "The goop starts to take over the house more, and that makes her feel even more icky. \"I can't take this anymore,\" she tells herself. Still, she worries about their \"secret.\" Again, she thinks about telling someone what is happening."
