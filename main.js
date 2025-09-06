@@ -13,7 +13,7 @@ function createWindow() {
 
   Menu.setApplicationMenu(null);
 
-  win.loadFile(path.join(__dirname, "ihptmain.html"));
+  win.loadFile(path.join(__dirname, "index.html"));
 }
 
 app.whenReady().then(() => {
@@ -30,4 +30,5 @@ app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
     app.quit();
   }
+
 });
